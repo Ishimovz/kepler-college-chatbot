@@ -1,3 +1,15 @@
+const qaData = {
+    // PASTE YOUR Q&A PAIRS HERE:
+    "How do I apply for admission?": "Visit our website and complete the online application form at https://keplercollege.ac.rw/apply",
+    "What programs does Kepler offer?": "Kepler offers undergraduate degrees in Business, Communications, and Healthcare Management with international recognition through U.S. partnerships.",
+    "Is financial aid available?": "Yes, financial aid is available for eligible students through scholarships and payment plans.",
+    "What is the campus like?": "Our Kigali campus features modern facilities, high-speed internet, and a vibrant student community.",
+    "Can I transfer credits?": "Yes, credit transfers are evaluated case-by-case. Contact admissions@keplercollege.ac.rw with your transcripts.",
+    // Add ALL other questions from your Excel file...
+    
+    // Default fallback answer (keep this last)
+    "": "I couldn't find that information. Please contact admissions@keplercollege.ac.rw for assistance."
+};
 :root {
     --primary: #2A527A;
     --secondary: #439947;
