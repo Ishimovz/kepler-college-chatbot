@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kepler College Chatbot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepler College AI Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="chat-container">
-        <div id="chat-output"></div>
-        <div class="input-area">
-            <input type="text" id="user-input" placeholder="Ask about Kepler College...">
-            <button id="send-btn">Send</button>
+    <div class="app-container">
+        <!-- Navigation Sidebar -->
+        <div class="sidebar">
+            <img src="assets/kepler-logo.png" alt="Kepler Logo" class="logo">
+            <nav>
+                <button class="nav-btn active" data-page="home"><span>🏠</span> Home</button>
+                <button class="nav-btn" data-page="chat"><span>💬</span> CampusBot</button>
+                <button class="nav-btn" data-page="about"><span>ℹ️</span> About</button>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Home Page -->
+            <div id="home-page" class="page active">
+                <h1>Welcome to Kepler College</h1>
+                <p>Your gateway to academic information and support</p>
+                <button id="start-chat" class="cta-button">🚀 Start Chatting</button>
+            </div>
+
+            <!-- Chat Page -->
+            <div id="chat-page" class="page">
+                <div class="chat-header">
+                    <h2>CampusBot Assistant</h2>
+                    <p>Ask about admissions, programs, or campus life</p>
+                </div>
+                <div id="chat-history" class="chat-history"></div>
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Type your question...">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+
+            <!-- About Page -->
+            <div id="about-page" class="page">
+                <h2>About CampusBot</h2>
+                <div class="about-content">
+                    <p>This AI assistant provides instant answers about Kepler College.</p>
+                    <div class="contact-card">
+                        <h3>Contact Us</h3>
+                        <p>📞 +250 789 773 042</p>
+                        <p>📧 admissions@keplercollege.ac.rw</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
